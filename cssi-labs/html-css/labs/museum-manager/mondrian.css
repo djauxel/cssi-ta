@@ -154,8 +154,116 @@ body {
     background-color: black;
 }
 
-.sq17row2 {
+.sq17 {
     height: 125px;
-    width: 40px;
+    width: 20px;
+    background-color: red
+}
+
+.sq18 {
+    height: 125px;
+    width: 20px;
+    background-color: white;
+}
+
+.sq19 {
+    height: 125px;
+    width: 80px;
+}
+
+.sq19-19 {
+    height: 75px;
+    width: 80px;
+    background-color: grey;
+}
+
+.sq19-20 {
+    height: 50px;
+    width: 80px;
+    background-color: white;
+}
+
+.sq21 {
+    height: 95px;
+    width: 60px;
+}
+
+.sq21-21 {
+    height: 100px;
+    width: 90px;
     background-color: red;
+}
+
+.sq21-22 {
+    height: 25px;
+    width: 215px;
+    background-color: black;
+}
+
+.sq23 {
+    height: 100px;
+    width: 125px;
+}
+
+.sq23-23 {
+    margin-left: 30px;
+    height: 50px;
+    width: 125px;
+    background-color: white;
+}
+
+.sq23-24 {
+    margin-left: 30px;
+    height: 50px;
+    width: 125px;
+    background-color: blue;
+}
+
+.sq25 {
+
+}
+
+.sq25-25 {
+    margin-left: 30px;
+    height: 50px;
+    width: 125px;
+    background-color: black;
+}
+
+.sq25-26 {
+    margin-left: 30px;
+    height: 50px;
+    width: 125px;
+    background-color: yellow;
+}
+
+.sq25-27 {
+    margin-left: 30px;
+    height: 25px;
+    width: 125px;
+    background-color: grey;
+}
+
+.sq28 {
+    height: 50px;
+    width: 40px;
+}
+
+.sq28-28 {
+    height: 50px;
+    width: 20px;
+    background-color: red;
+}
+
+.sq28-29 {
+    height: 75px;
+    width: 40px;
+    background-color: white;
+}
+
+.sq30 {
+    margin-left: -20px;
+    height: 50px;
+    width: 20px;
+    background-color: white;
 }
