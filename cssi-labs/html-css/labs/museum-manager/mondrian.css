@@ -14,4 +14,148 @@
  * limitations under the License.
  */
 
+body {
+    background-color: purple;
+    margin: 0;
+}
 
+.rowA {
+    display: flex;
+    height: 100px;
+}
+
+.rowB {
+    display: flex;
+    height: 125px;
+}
+
+.rowC {
+    display: flex;
+    height: 100px;
+}
+
+.sq1 {
+    height: 100px;
+    width: 20px;
+    background-color: black;
+}
+
+.sq2 {
+    height: 100px;
+    width: 150px;
+    background-color: white;
+}
+
+.sq2-2 {
+    height: 30px;
+    width: 150px;
+    background-color: grey;
+}
+
+.sq2-3 {
+    height: 70px;
+    width: 60px;
+    background-color: red;
+}
+
+.sq5 {
+    height: 65px;
+    width: 125px;
+}
+
+.sq5-5 {
+    height: 65px;
+    width: 125px;
+    background-color: white;
+}
+
+.sq5-6 {
+    height: 35px;
+    width: 125px;
+    background-color: yellow;
+}
+
+.sq7 {
+    height: 65px;
+    width: 125px;
+}
+
+.sq7-7 {
+    height: 65px;
+    width: 125px;
+    background-color: grey;
+}
+
+.sq7-8 {
+    height: 35px;
+    width: 125px;
+    background-color: blue;
+}
+
+.sq9 {
+    height: 100px;
+    width: 40px;
+    background-color: yellow
+}
+
+.sq10 {
+    height: 125px;
+    width: 20px;
+    background-color: white;
+}
+
+.sq11 {
+    height: 125px;
+    width: 150px;
+}
+
+.sq11-11 {
+    height: 65px;
+    width: 150px;
+    background-color: blue;
+}
+
+.sq11-12 {
+    height: 60px;
+    width: 150px;
+    background-color: black;
+}
+
+.sq13 {
+    height: 125px;
+}
+
+.sq13-13 {
+    height: 65px;
+    width: 125px;
+    background-color: yellow;
+}
+
+.sq13-14 {
+    height: 60px;
+    width: 125px;
+    background-color: white;
+}
+
+.sq15 {
+    height: 65px;
+    width: 125px;
+}
+
+.sq15-15 {
+    height: 65px;
+    width: 125px;
+    background-color: grey;
+}
+
+.sq15-16 {
+    height: 60px;
+    width: 125px;
+    background-color: black;
+}
+
+.sq17row2 {
+    height: 125px;
+    width: 40px;
+    background-color: red;
+}
