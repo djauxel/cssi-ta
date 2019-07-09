@@ -13,3 +13,28 @@
 // limitations under the License.
 
 console.log("script is running...");
+
+// TASK 1 BELOW
+let task1Time = "3:00pm";
+function My_Alarm(time) {
+    return "Hey, Alex, wake up! It's " + time;
+}
+console.log(My_Alarm(task1Time));
+
+// TASK 2 BELOW
+let task2Time = "4:00pm";
+function Mom_Alarm(time) {
+    return "Hey, Mom, wake up! It's " + time;
+}
+console.log(Mom_Alarm(task2Time));
+
+// TASK 3 BELOW
+let task3Time = "5:00pm";
+function Family_Alarm() {
+        
+}
+
+// TASK 4 BELOW
+
+
+// TASK 5 BELOW

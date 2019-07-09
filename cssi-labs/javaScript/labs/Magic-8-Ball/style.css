@@ -60,7 +60,7 @@ body {
 #triangle {
 	border-left: 70px solid transparent;
 	border-right: 70px solid transparent;
-	border-top: 120px solid blue;
+	border-top: 120px solid black;
   height: 0;
   left: 14%;
   position:relative;
