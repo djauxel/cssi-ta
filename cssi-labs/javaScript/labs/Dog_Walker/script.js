@@ -48,9 +48,3 @@ function advancedSchedule(dogType, dogName) {
 advancedSchedule(dogType1, dogName1);
 advancedSchedule(dogType2, dogName2);
 advancedSchedule(dogType3, dogName3);
-
-// Complete Extension Below
-// console.log("EXTENSION BELOW");
-// function favoriteDog() {
-
-// }
