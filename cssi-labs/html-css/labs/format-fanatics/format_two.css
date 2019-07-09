@@ -14,9 +14,24 @@
  * limitations under the License.
  */
 
-.container {
+ .container {
   display:grid;
+  grid-template-columns: 1fr 10fr 1fr;
   /* Style the template for the grid */
+}
+
+.border-top {
+  grid-row: 1;
+  height: 50px;
+}
+
+.border-side {
+  grid-row: span 5;
+  height: 1000px;
+}
+
+.border-bottom {
+
 }
 
 /* Making border black */
@@ -25,7 +40,7 @@
 }
 
 #title {
-  grid-column: span 12;
+  grid-column: span 10;
 }
 
 .photo {
