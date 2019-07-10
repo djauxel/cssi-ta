@@ -58,5 +58,31 @@ def get_move_name(short_move):
     else:
         return "Scissors"
 
-
 # Write your code below - make RPS happen using the functions above!
+playerWins = 0
+cpuWins = 0
+ties = 0
+
+rounds = int(raw_input('How many round?: '))
+print('\n')
+
+for i in range(rounds):
+    player_move = get_player_move()
+    cpu_move = get_computer_move()
+
+    print('Player chose ' + get_move_name(player_move))
+    print('CPU chose ' + get_move_name(cpu_move))
+
+    result = determine_winner(player_move, cpu_move)
+    if result == 'player':
+        playerWins += 1
+        print('Player won!')
+    elif result == 'computer':
+        cpuWins += 1
+        print('Computer won!')
+    else:
+        ties += 1
+        print('It\'s a tie!')
+
+    print_scoreboard(playerWins, cpuWins, ties)
+    print('\n')
