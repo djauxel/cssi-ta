@@ -2,6 +2,7 @@ console.log('Initialize variables');
 
 let xSelected = []; // Squares selected by player X
 let oSelected = []; // Squares selected by player O
+let placeholder = []; // Placeholder for either player's selections
 let xCount = 0; // Counts how many squares player X has selected
 let oCount = 0; // Counts how many squares player O has selected
 let winners = [ // Winning combinations
@@ -17,39 +18,64 @@ let winners = [ // Winning combinations
 
 let turn = 0; // 0 = X, 1 = O
 
-const score = {
-    'X': 0,
-    'O': 0
-};
-
-console.log('START GAME');
+console.log('Start game');
 
 function checkWin() {
+    if (turn == 0) {
+        placeholder = oSelected;
+    } else {
+        placeholder = xSelected;
+    };
 
+    for (let i = 0; i < winners.length; i++) {
+        if (placeholder.includes(winners[i][0]) && placeholder.includes(winners[i][1]) && placeholder.includes(winners[i][2])) {
+            if (placeholder == oSelected) {
+                document.getElementById('winner').innerHTML = 'O is the winner!';
+                console.log('O wins!');
+            } else {
+                document.getElementById('winner').innerHTML = 'X is the winner!';
+                console.log('X wins!');
+            };
+        } else {
+            if (xSelected.length + oSelected.length == 9) {
+                document.getElementById('winner').innerHTML = 'Nobody wins!';
+                console.log('Nobody wins!');
+            };
+        };
+    }
 };
 
 function play() {
-    for(let i = 1; i <= 9; i++) {
+    for (let i = 1; i <= 9; i++) {
         document.getElementById('sq' + i).addEventListener('click', (event) => {
-            if(turn == 0) {
+            if (turn == 0) {
                 event.target.innerHTML = 'O';
+                oCount++;
                 oSelected.push(i);
-                if(oCount >= 3) {
-                   checkWin(); 
+                if (oCount >= 3) {
+                    checkWin();
                 };
-    
+
                 turn = 1;
             } else {
                 event.target.innerHTML = 'X';
+                xCount++;
                 xSelected.push(i);
-                if(xCount >= 3) {
+                if (xCount >= 3) {
                     checkWin();
                 };
-    
+
                 turn = 0;
-            }
+            };
         });
     }
 };
 
+function restart() {
+    document.querySelector('button').addEventListener('click', () => {
+        location.reload()
+    })
+};
+
 play();
+restart();
