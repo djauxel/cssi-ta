@@ -12,12 +12,8 @@ body {
 .square {
     border: solid white thin;
     color: white;
-}
-
-.text {
     display: block;
     font-size: 4rem;
     text-align: center;
-    vertical-align: middle;
     line-height: 200px;
 }
