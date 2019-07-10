@@ -1,6 +1,3 @@
-number = int(raw_input('Enter a number: '))
-word = raw_input('Enter a word: ')
-
 # def pluralize1(number, word):
 #     if number > 0:
 #         if 'ife' in word:
@@ -18,6 +15,8 @@ word = raw_input('Enter a word: ')
 #         print('Out: ' + word)
 #     else:
 #         print('Out: ' + word)
+
+# pluralize1(number, word)
 
 def pluralize2(number, word):
     if number > 0:
@@ -37,5 +36,9 @@ def pluralize2(number, word):
     else:
         print('Out: ' + word)
 
-# pluralize1(number, word)
-pluralize2(number, word)
+times = int(raw_input('How many times?: '))
+for i in range(times):
+    number = int(raw_input('Enter a number: '))
+    word = raw_input('Enter a word: ')
+    pluralize2(number, word)
+    print('\n')
