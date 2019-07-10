@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    border: solid white thin;
+}
+
+.square {
+    border: solid white thin;
+    color: white;
+}
+
+.text {
+    display: block;
+    font-size: 4rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+}
